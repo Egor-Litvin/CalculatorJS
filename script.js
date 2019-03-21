@@ -1,29 +1,46 @@
 function plus() {
 var num1, num2, result;
-    num1 = documentgetElementById('n1').value;
-    num1 = parseInt(num1);
-    num2 = documentgetElementById('n2').value;
-    num2 = parseInt(num2);  
+        num1 = document.getElementById('n1').value;
+        num1 = parseInt(num1);
+        
+        num2 = document.getElementById('n2').value;
+        num2 = parseInt(num2);
+    
     result = num1 + num2;
-    document.getElementById('out').innerHTML = result
+    document.getElementById('out').innerHTML = result;
 }
 
 function minus() {
     var num1, num2, result;
-    num1 = documentgetElementById('n1').value;
+    num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
-    num2 = documentgetElementById('n2').value;
-    num2 = parseInt(num2); 
+    
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    
     result = num1 - num2;
+    
     document.getElementById('n2').value;
 }
 
 function multiplay() {
     var num1, num2, result;
-    num1 = documentgetElementById('n1').value;
+    num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
-    num2 = documentgetElementById('n2').value;
+    num2 = document.getElementById('n2').value;
     num2 = parseInt(num2); 
     result = num1 * num2;
-    document.getElementById('out').innerHTML = result
+    document.getElementById('out').innerHTML = result;
+
+}
+
+function divide() {
+    var num1, num2, result;
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2); 
+    result = num1 / num2;
+    document.getElementById('out').innerHTML = result;
+
 }
